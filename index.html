@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>.problem1sliders{display:none;}</style>
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"></script>
+</head>
+<body>
+
+    <div class="problem1sliders">
+        <label>Radius (a)</label>
+        <input disabled type="range" min="-20e-15" max="20e-15" step="0.01e-15" id="radiusSlider" class="radiusInput" oninput=inputChange(this)>
+        <input disabled type="text" value="0" id="radiusText" class="radiusInput" oninput=inputChange(this)>
+    </div>
+
+    <div>
+        <label>Start t (t0)</label>
+        <input disabled type="range" min="-20e-15" max="20e-15" step="0.01e-15" id="startSlider" class="startInput" oninput=inputChange(this)>
+        <input disabled type="text" value="0" id="startText" class="startInput" oninput=inputChange(this)>
+    </div>
+    <div>
+        <label>End t (tn)</label>
+        <input disabled type="range" min="-20e-15" max="20e-15" step="0.01e-15" id="endSlider" class="endInput" oninput=inputChange(this)>
+        <input disabled type="text" value="10" id="endText" class="endInput" oninput=inputChange(this)>
+    </div>
+    <div>
+        <label>Start y (y0)</label>
+        <input disabled type="range" min="0" max="10" step="0.01" id="startYSlider" class="startYInput" oninput=inputChange(this)>
+        <input disabled type="text" value="0" id="startYText" class="startYInput" oninput=inputChange(this)>
+    </div>
+    <div>
+        <label>Step Size</label>
+        <input disabled type="range" min="0.01" max="10" step="0.01" id="stepSizeSlider" class="stepSizeInput"
+            oninput=inputChange(this)>
+        <input disabled type="text" value="0.01" id="stepSizeText" class="stepSizeInput" oninput=inputChange(this)>
+    </div>
+    <div>
+        <label>Energy (E)</label>
+        <input type="range" min="0" max="4e-54" step="0.01e-55" id="energySlider" class="energyInput" oninput=inputChange(this)>
+        <input type="text" value="0" id="energyText" class="energyInput" oninput=inputChange(this)>
+    </div>
+
+    <script src="defFunctions.js"></script>
+    <!-- <script src="xsquared.js"></script> -->
+    <!-- <script src="problem1.js"></script> -->
+    <script src="problem2.js"></script>
+    <script src="controls.js"></script>
+    <script src="index.js"></script>
+    
+
+</body>
+</html>
